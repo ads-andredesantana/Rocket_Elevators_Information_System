@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  formId: 1
+  First_name: MyString
+  Last_name: MyString
+  Building_Type: MyString
+  Suggested_elevators: 1
+  Install_cost: 1
+  Total_Cost: 1
+
+two:
+  formId: 1
+  First_name: MyString
+  Last_name: MyString
+  Building_Type: MyString
+  Suggested_elevators: 1
+  Install_cost: 1
+  Total_Cost: 1

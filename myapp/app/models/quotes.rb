@@ -1,2 +1,0 @@
-class quotes < ApplicationRecord
-end

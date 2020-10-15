@@ -10,33 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_10_14_173829) do
 
-  create_table "Employee", primary_key: "User_id", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "Last_Name", limit: 45, null: false
-    t.string "First_Name", limit: 45, null: false
-    t.string "Title_Function", limit: 45, null: false
-    t.string "Email", limit: 45, null: false
+  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "Last_Name"
+    t.string "First_name"
+    t.string "Title_Function"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email", limit: 30
   end
 
-  create_table "Quotes", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "Customerid", null: false
-    t.string "First_name", limit: 45, null: false
-    t.string "Last_name", limit: 45
-    t.string "Building_Type", limit: 10, null: false
-    t.integer "Suggested_elevators", null: false
-    t.string "Style_Chosen", limit: 10, null: false
-    t.integer "Install_cost", null: false
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "First_name"
+    t.string "Last_name"
+    t.string "Building_Type"
+    t.integer "Suggested_elevators"
+    t.integer "Install_cost"
     t.integer "Total_Cost"
-    t.string "Email", limit: 45, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "Users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "id_Users", null: false, auto_increment: true
-    t.string "First_Name", limit: 45, null: false
-    t.string "Last_Name", limit: 45, null: false
-    t.string "Email", limit: 45, null: false
-    t.index ["id_Users"], name: "id_Users_UNIQUE", unique: true
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "First_name"
+    t.string "Last_name"
+    t.string "Email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
