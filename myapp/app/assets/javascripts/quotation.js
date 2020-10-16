@@ -1,3 +1,4 @@
+  
 // Declaring the global variables
 
 var nb_apart,           //Number of apartments
@@ -348,5 +349,3 @@ var product_Line_Selected = function () {
         excl_Price_Tot();
     }
 };
-
-

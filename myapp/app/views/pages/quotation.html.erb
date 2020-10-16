@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators</title>
+		<meta name="Author" content="André De Santana"/>
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<body class="smoothscroll enable-animation bg-grey">
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets\images\r2.png" alt=""/>
+						</a>
+
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->								
+										<a class="dropdown-toggle" href="#services">SERVICES</a>
+										<ul class="dropdown-menu white-space=nowrap">
+											<li><a href="index_residential.html">Residential</a></li>
+											<li><a href="index_commercial.html">Corporate</a></li>
+											<li><a href="quotation.html">Get a Quote</a></li>
+										</ul>
+									</li>
+										<!-- WORK -->
+										<a href= "index.html#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+			<!-- PAGE HEADER -->	
+			<section class="page-header page-header-lg parallax parallax-3" style="background-image:url('rocket_elev_files/images/vision-min.jpg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container text-center">
+					<h1>Quote Request Form</h1>
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->		
+
+			<hr class="m-0" /><!-- 1px line separator --> <br>
+
+			<!-- STEPS -->			
+			<div class="container">
+				<div class="row process-wizard process-wizard-default">
+					<div class="col-3 process-wizard-step complete">
+						<div class="text-center process-wizard-stepnum">Step 1</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#type_build" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Choose the Type of Building</div>
+					</div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 2</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#quote" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Fill the Information to Get a Quote</div>
+					</div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 3</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#services" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Send the Form to Rocket Elevator's Sales Team</div>
+					</div>
+				
+					<div class="col-3 process-wizard-step complete"><!-- complete -->
+						<div class="text-center process-wizard-stepnum">Step 4</div>
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#services" class="process-wizard-dot"></a>
+						<div class="process-wizard-info text-center">Start the Project after Reviewing the Details with our <br> Engineering Team</div>
+					</div>
+				</div>
+			</div>	
+			<!-- /STEPS -->			
+			
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Choose a option</h2>
+						<hr />
+					</header>
+
+					<div class="row">
+
+						<!-- FORM -->
+					<div class="col-md-12 col-sm-12">
+	
+								<input type="hidden" name="action" value="submission_send">
+		
+		
+									<div class="row">
+										<div id="BuildingType" class="col-md-12">
+											<label>Building Type</label>
+											<select class="form-control pointer" name="BuildingType">
+												<option value="">--- Select ---</option>
+												<option value="Residential">Residential</option>
+												<option value="Commercial">Commercial</option>
+												<option value="Corporate">Corporate</option>
+												<option value="Hybrid">Hybrid</option>
+											</select>
+										</div>
+		
+										<div id="ApartNumber" class="col-md-4">
+											<label>Number of apartements</label>
+											<input id="Number_Appart" class="form-control" type="number" value=""  min="0">
+										</div>
+		
+										 <div id="NumberBusiness" class="col-md-4" style="display: none;">
+											<label>Numbers business</label>
+											<input id="Number_Business" class="form-control" type="number"  min="0">
+										</div>
+
+										<div id="NumberFloor" class="col-md-4" >
+											<label>Number of floors</label>
+											<input id="Number_Floor" class="form-control" type="number"  min="0"> 	
+										</div>
+		
+										<div id="BasementNumber" class="col-md-4" >
+											<label>Number of basement</label>
+											<input id="Basement_Number" class="form-control" type="number" min="0">
+										</div>
+		
+										<div id="NumberParking" class="col-md-4" style="display: none;">
+											<label>Number of parking</label>
+											<input id="Number_Parking" class="form-control" type="number"  min="0">
+										</div>
+		
+										<div id="Numbercage" class="col-md-12" style="display: none;" >
+											<label>Number of cages</label>
+											<input id="Number_cages" class="form-control" type="number"  min="0">
+										</div>
+		
+										<div id="Occupantperfloors" class="col-md-12" style="display: none;">
+											<label>Number of occupant per floors</label>
+											<input id="Occupant_per_floors" class="form-control" type="number" min="0">
+										</div>
+		
+										<div id="NumberHour" class="col-md-12" style="display: none;">
+											<label>Operating hours of the building</label>
+											<input id="Number_Hour" class="form-control" type="number" min="1" max="24">
+										</div>
+
+										<div id="RecommendedNumber" class="col-md-12">
+											<label>Recommended elevators</label>
+											<input id="Recommended_Number" class="form-control" type="number" name="Recommended_Number" readonly="">
+											
+										</div>
+
+										<div id="type" class="col-md-12" >
+											<label>Elevator type</label>
+		
+											<input type="radio" name="Typeradio" value="7565">Standard 
+		
+											<input type="radio" name="Typeradio" value="12345" >Premium
+		
+											<input type="radio" name="Typeradio" value="15400">Excelium
+										</div>
+		
+										<div id="Elevatorcost" class="col-md-4" >
+											<label>Cost by Elevator</label>
+												<input id="Elevator_cost" type="text" class="form-control" value="Choose a elevator type" readonly="">
+										</div>
+
+										<div id="Totalelevatorcost" class="col-md-4" >
+											<label>Cost of all your elevator</label>
+											<input id="Total_elevator_cost" type="text" class="form-control" readonly="">
+										</div>
+
+										<div id="Totalinstal" class="col-md-4" >
+											<label>Instalation cost</label>
+											<input id="Total_instal" type="text" class="form-control" readonly="">
+										</div>
+										
+										<div id="Fulltotal" class="col-md-4">
+											<label>Total</label>
+											<input id="Full_total" type="text" class="form-control" readonly="">
+										</div>
+										
+		
+									</div>
+									<div class="row">
+											<div class="col-md-4">
+												<a class="btn btn-warning2 btn-lg" href="Quotesend.html">Send your quote &nbsp; <i class="fa fa-angle-right"></i></a>
+											</div>
+										</div>
+		
+								<!-- /FORM -->
+							</div>
+									
+											
+						</div>
+						<!-- /FORM -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+			<!--total-->
+
+			<!--total-->
+
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+		<!-- FORM -->
+		<div id="quote" class="container">
+
+			<div class="col-md-12 col-sm-12">
+
+				<div class="heading-title text-center">
+					<h1>Please Fill Your Information</h2> 
+				</div>
+
+				<!-- Alert Success -->
+				<div id="alert_success" class="alert alert-success mb-30">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>Thank You!</strong> Your message successfully sent!
+				</div><!-- /Alert Success -->
+
+				<!-- Alert Failed -->
+				<div id="alert_failed" class="alert alert-danger mb-30">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>[SMTP] Error!</strong> Internal server error!
+				</div><!-- /Alert Failed -->
+
+				<!-- Alert Mandatory -->
+				<div id="alert_mandatory" class="alert alert-danger mb-30">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+				</div><!-- /Alert Mandatory -->
+
+				<form action="php/contact.php" method="post" enctype="multipart/form-data">
+					<fieldset>
+						<input type="hidden" name="action" value="contact_send" />
+
+						<div class="row">
+							<div class="col-md-8">
+								<label for="contact:name">Full Name *</label>
+								<input required type="text" value="" class="form-control" name="contact[name][required]"
+									id="contact:name">
+							</div>
+							<div class="col-md-4">
+								<label for="contact:name">Business Name *</label>
+								<input required type="text" value="" class="form-control" name="contact[name][required]"
+									id="contact: name">
+							</div>
+							<div class="col-md-8">
+								<label for="contact:email">E-mail *</label>
+								<input required type="email" value="" class="form-control"
+									name="contact[email][required]" id="contact:email">
+							</div>
+							<div class="col-md-4">
+								<label for="contact:phone">Phone Number</label>
+								<input type="text" value="" class="form-control" name="contact[phone]"
+									id="contact:phone">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="contact:subject">Project Name *</label>
+								<input required type="text" value="" class="form-control"
+									name="contact[subject][required]" id="contact: subject">
+							</div>
+							<div class="col-md-4">
+								<label for="contact_department">Department</label>
+								<select class="form-control pointer" name="contact[department]">
+									<option value="">--- Select ---</option>
+									<option value="Sales">Sales</option>
+									<option value="Marketing">Marketing</option>
+									<option value="Engineering">Engineering</option>
+								</select>
+							</div>
+							<div class="col-md-12">
+								<label for="contact:subject">Project Description *</label>
+								<input required type="text" value="" class="form-control"
+									name="contact[subject][required]" id="contact:subject">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="contact:message">Message *</label>
+								<textarea required maxlength="10000" rows="8" class="form-control"
+									name="contact[message]" id="contact:message"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label for="contact:attachment">File Attachment</label>
+
+								<!-- custom file upload -->
+								<input class="custom-file-upload" type="file" id="file" name="contact[attachment]"
+									id="contact:attachment" data-btn-text="Select a File" />
+								<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND
+								MESSAGE</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<!-- /FORM -->
+
+			<!-- CONTACT -->
+			<div class="text-center mb-60">
+				<h1>Contact Us</h2> </br>
+					<div class="col-md-12 col-sm-12">
+						<div id="map2" class="h-400"><iframe width="1000" height="400" frameborder="0"
+								scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+								src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4468%20Wellington%20St,%20Suite%20204%20Verdun+(Rocket%20Elevators)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+							</script>
+						</div>
+						<br>
+						<div class="col-md-12 col-sm-12">
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468
+									Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a
+										href="tel:1800-555-1234">(581) 701-0303</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a
+										href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+						<!-- /INFO -->
+
+					</div>
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+
+		</div>
+		<!-- /wrapper -->
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<%# <div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER --> %>
+
+		<!-- JAVASCRIPT FILES -->
+		<%# <script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/quote.js"></script> %>
+		<!-- <script>window.addEventListener('wheel', { passive: false })</script>  -->
+
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<%# <script src="assets/js/contact.js"></script> %>
+
+        <%# <%= javascript_include_tag 'application', 'all': 'reload' %> %>
+
+		<script>
+
+ 		</script>
+	</body>
+</html>
