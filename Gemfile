@@ -48,11 +48,14 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+<<<<<<< HEAD
+=======
   gem 'capistrano', '~> 3.10', require: false
   gem 'capistrano-rails', '~> 1.4', require: false
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
+>>>>>>> d6684bb7c30deb16a0a2c26c6e90c8ba65682410
 end
 
 group :test do
@@ -65,3 +68,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+<<<<<<< HEAD
+
+gem 'bootstrap-sass', '~> 3.3.4'
+
+gem 'font-awesome-sass', '~> 4.3.0'
+
+gem 'jquery-ui-rails'
+
+gem 'bootstrap-social-rails'
+
+gem 'jquery-rails'
+
+gem 'github-css-rails', '~> 1.1.3'
+
+gem 'rails_layout'
+
+gem 'owlcarousel-rails', '~> 2.2', '>= 2.2.3.5'
+
+gem 'popper_js', '~> 1.16'
+=======
+>>>>>>> d6684bb7c30deb16a0a2c26c6e90c8ba65682410
