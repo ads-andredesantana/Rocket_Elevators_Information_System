@@ -7,4 +7,9 @@ class RocketElevatorController < ApplicationController
   end
   def quote
   end
+
+  def admin
+  end
+
+
 end

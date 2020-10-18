@@ -1,0 +1,13 @@
+{:uriI"žfile://app/assets/plugins/slider.layerslider/skins/outline/info.json?type=application/json&id=d0fc02a6730e391fe2264ac36299acbf566c5e1c652112250653e019c09780ec:ET:load_pathI"app/assets/plugins;T:filenameI"Bapp/assets/plugins/slider.layerslider/skins/outline/info.json;T:	nameI"*slider.layerslider/skins/outline/info;T:logical_pathI"/slider.layerslider/skins/outline/info.json;T:content_typeI"application/json;T:sourceI"Ÿ{
+	"name" : "Outline",
+	"version" : "5.2.0",
+	"requires" : "5.0.0",
+	"author" : "Offlajn",
+	"created" : "2016-02-11",
+	"updated" : "2016-02-11",
+	"note" : ""
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Pfile-digest://app/assets/plugins/slider.layerslider/skins/outline/info.json;TTF:charsetI"
+utf-8;F:digest"%‹¨XZ(Aµ%<z#VßÚÛ(¸âöZvÜöoYÖÜ¬:lengthiŸ:dependencies_digest"%l§¸zmy’Â{çä\“4–g3D.DW—ŽÛÂ}[wLXt:idI"Ed0fc02a6730e391fe2264ac36299acbf566c5e1c652112250653e019c09780ec;F:
+mtimel+ôx‰_
