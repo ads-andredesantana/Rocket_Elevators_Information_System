@@ -1,3 +1,4 @@
+
 #root
 Rails.application.routes.draw do
   root 'rocket_elevator#index'
@@ -25,4 +26,5 @@ Rails.application.routes.draw do
 #         end
 #       end
 #     end
+
 end
