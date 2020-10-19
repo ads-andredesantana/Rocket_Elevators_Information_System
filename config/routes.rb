@@ -1,17 +1,20 @@
-
-
+#root
 Rails.application.routes.draw do
   root 'rocket_elevator#index'
 
   get 'rocket_elevator/residancial'
   get 'rocket_elevator/comercial'
   get 'rocket_elevator/quote'
-  # root to:'pages#/admin'
-  # devise_for :users
-  # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  # root to:'pages#/admin'
-  # root to:'pages#index_residential'
-  # root to:'pages#index_commercial'
+
+
+
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
+#     root to:'pages#/admin'
+#     devise_for :users
+#     mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   # namespace :api, defaults: {format: :json} do
   #   namespace :v1 do 

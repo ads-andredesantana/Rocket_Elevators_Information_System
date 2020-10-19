@@ -1,5 +1,7 @@
 class RocketElevatorController < ApplicationController
-  def index
+  def login
+  end
+  def index 
   end
   def residancial
   end
@@ -7,9 +9,7 @@ class RocketElevatorController < ApplicationController
   end
   def quote
   end
-
-  def admin
-  end
-
-
+  
+  #Ex:- add_index("admin_users", "username")
 end
+
