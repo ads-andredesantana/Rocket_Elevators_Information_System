@@ -12,3 +12,4 @@ class RocketElevatorController < ApplicationController
   
   #Ex:- add_index("admin_users", "username")
 end
+
