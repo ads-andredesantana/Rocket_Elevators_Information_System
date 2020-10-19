@@ -1,9 +1,9 @@
-<h1>RocketElevator#login</h1>
+<h1></h1>
 <% if current_user%>
 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete%>
 <%else%>
 <%=link_to "sign In", new_user_session_path%>
-<%# <%=link_to "sign UP", new_user_registration_path%> %>
+<%# <%=link_to "sign UP", new_user_registration_path%> 
 <%end%>
 
 
