@@ -5,40 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-	<head>
-		<meta charset="utf-8" />
-		<title>Rocket Elevators</title>
-		<meta name="Author" content="André De Santana"/>
-
-		<!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" rel="stylesheet" type="text/css" />
-
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-		<!-- REVOLUTION SLIDER -->
-		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
-
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-	</head>
-
-
-    
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
 
   <body>
   
@@ -102,3 +73,137 @@
 
   </body>
 </html>
+
+  <body class="enable-animation">
+  <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+ 
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+    <!-- TOP NAV -->
+    <header id="topNav">
+        <div class="container">
+
+            <!-- Mobile Menu Button -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="logo float-left scrollTo" href="index.html">
+                
+                <%= image_tag("r2.png", alt: "Logo Rocket Elevators", class: "img-fluid" ) %>
+            </a>
+
+            <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+                <nav class="nav-main">
+                    <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                        <li class="active">
+                            <!-- HOME -->
+                            <a href="index.html">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <!-- SERVICES -->
+                            <a class="dropdown-toggle" href="#services">SERVICES</a>
+                            <ul class="dropdown-menu white-space=nowrap">
+                                <li><a href="index_residential.html">Residential</a></li>
+                                <li><a href="index_commercial.html">Corporate</a></li>
+                                <li><a href="quote">Get a Quote</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- WORK -->
+                            <a href="index.html#work">
+                                PORTFOLIO
+                            </a>
+                        </li>
+                        <li>
+                            <!-- NEWS -->
+                            <a href="index.html#news">
+                                NEWS
+                            </a>
+                        </li>
+                        <li>
+                            <!-- CLIENTS -->
+                            <a href="index.html#clients">
+                                CLIENTS
+                            </a>
+                        </li>
+                        <li>
+                            <!-- CONTACT -->
+                            <a href="index.html#contact">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /Top Nav -->
+</div>
+    <%= yield %>
+
+    <!-- FOOTER -->
+<footer id="footer" style="background:url('assets/images/imgpattern2')">
+
+    <div class="container">
+        <div class="row">
+
+            <!-- col #1 -->
+            <div class="col-md-8">
+                <h2 class="letter-spacing-1">Looking for a rewarding career?</h2>
+
+                <!-- Small Description -->
+                <p>
+                    If you are looking for a rewarding, meaningful career, send us your CV!!! 
+                    <h3 class="letter-spacing-1">Follow us on social media!</h3> 
+                </p>
+            </div>
+            <!-- /col #1 -->
+
+            <!-- col #2 -->
+            <div class="col-md-4">
+                <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+                <!-- Newsletter Form -->
+                <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+                <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /Newsletter Form -->
+
+            </div>
+            <!-- /col #2 -->
+            <ul class="float-right m-0 list-inline mobile-block">	
+                <li><a href="https://www.facebook.com" title="Facebook" target="_new"><img src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook" height="24px" width="24px"></a></li>
+                <li><a href="https://twitter.com" title="Twitter" target="_new"><img src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter" height="34px" width="34px"></a></li>
+                <li><a href="https://www.instagram.com" title="Instagram" target="_new"><img src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px" width="34px"></a></li>
+                <li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px" width="34px"></a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            &copy; All Rights Reserved, Rocket Elevators inc.
+        </div>
+    </div>
+
+</footer>
+
+    <script>
+		var plugin_path = 'assets';
+	</script>
+
+
+

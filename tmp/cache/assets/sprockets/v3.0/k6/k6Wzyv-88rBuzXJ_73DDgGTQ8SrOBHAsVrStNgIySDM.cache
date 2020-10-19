@@ -1,0 +1,13 @@
+{:uriI"file://app/assets/plugins/slider.layerslider/skins/numbers/info.json?type=application/json&id=1f415cb668afa25aea7bae2c536b7d806cf48d52d44ef854efe988a09f0e7abd:ET:load_pathI"app/assets/plugins;T:filenameI"Bapp/assets/plugins/slider.layerslider/skins/numbers/info.json;T:	nameI"*slider.layerslider/skins/numbers/info;T:logical_pathI"/slider.layerslider/skins/numbers/info.json;T:content_typeI"application/json;T:sourceI"Ÿ{
+	"name" : "Numbers",
+	"version" : "5.2.0",
+	"requires" : "5.0.0",
+	"author" : "Offlajn",
+	"created" : "2016-02-08",
+	"updated" : "2016-02-08",
+	"note" : ""
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Pfile-digest://app/assets/plugins/slider.layerslider/skins/numbers/info.json;TTF:charsetI"
+utf-8;F:digest"%ë±lCÏˆ…$p„ÿ¾ÔÀÇˆŒ07jm"MEºïâPñ:lengthiŸ:dependencies_digest"% (Pú:ê«iÖÅùGİ®P“…§©Ø©ãn:idI"E1f415cb668afa25aea7bae2c536b7d806cf48d52d44ef854efe988a09f0e7abd;F:
+mtimel+ôx‰_
