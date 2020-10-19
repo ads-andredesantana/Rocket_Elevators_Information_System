@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'rocket_elevator#index'
 
   get 'rocket_elevator/residancial'
-  get 'rocket_elevator/comercial'
+  get 'rocket_elevator/commercial'
   get 'rocket_elevator/quote'
 
 
