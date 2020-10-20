@@ -1,0 +1,52 @@
+<%= form_with(model: battery, local: true) do |form| %>
+  <% if battery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(battery.errors.count, "error") %> prohibited this battery from being saved:</h2>
+
+      <ul>
+      <% battery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :building_id %>
+    <%= form.text_field :building_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PropertyType %>
+    <%= form.text_field :PropertyType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Status %>
+    <%= form.text_field :Status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :employee_id %>
+    <%= form.text_field :employee_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DateOfCommissioning %>
+    <%= form.datetime_select :DateOfCommissioning %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DateOfLastInspect %>
+    <%= form.datetime_select :DateOfLastInspect %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CertificateOfOperation %>
+    <%= form.text_field :CertificateOfOperation %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
