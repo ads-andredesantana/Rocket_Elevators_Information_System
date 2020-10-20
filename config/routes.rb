@@ -1,10 +1,6 @@
 
 #root
 Rails.application.routes.draw do
-  resources :employees
-  resources :addresses
-  resources :customers
-  resources :leads
   root 'rocket_elevator#index'
   get 'rocket_elevator/index'
   get 'rocket_elevator/residancial'
