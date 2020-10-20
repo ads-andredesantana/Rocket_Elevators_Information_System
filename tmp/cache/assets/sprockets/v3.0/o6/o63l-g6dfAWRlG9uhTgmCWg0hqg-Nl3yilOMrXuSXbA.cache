@@ -1,14 +1,0 @@
-{:uriI"file://app/assets/plugins/slider.layerslider/skins/noskin/info.json?type=application/json&id=0edb1d341bfc4e46baf06d76efb57d66067a93d2f8c03ee436ba3515a965362d:ET:load_pathI"app/assets/plugins;T:filenameI"Aapp/assets/plugins/slider.layerslider/skins/noskin/info.json;T:	nameI")slider.layerslider/skins/noskin/info;T:logical_pathI".slider.layerslider/skins/noskin/info.json;T:content_typeI"application/json;T:sourceI"É{
-	"name" : "No skin",
-	"version" : "4.6.0",
-	"requires" : "4.5.5",
-	"author" : "Kreatura Media",
-	"created" : "2013-01-15",
-	"updated" : "2013-07-29",
-	"note" : "Hides everything, including buttons"
-};T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ofile-digest://app/assets/plugins/slider.layerslider/skins/noskin/info.json;TTF:charsetI"
-utf-8;F:digest"%^·œTæ©³+€(¡ZM?Ûé
-Aó¬ñ)öy]	ª:lengthiÉ:dependencies_digest"%†Ğ“õ ªTèÆ“"^äÉ“"š¥bäœ„ÂAúş -:idI"E0edb1d341bfc4e46baf06d76efb57d66067a93d2f8c03ee436ba3515a965362d;F:
-mtimel+ôx‰_

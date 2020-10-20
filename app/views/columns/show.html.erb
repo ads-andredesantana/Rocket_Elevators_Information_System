@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Battery:</strong>
+  <%= @column.battery %>
+</p>
+
+<p>
+  <strong>Propertytype:</strong>
+  <%= @column.PropertyType %>
+</p>
+
+<p>
+  <strong>Numberoffloor:</strong>
+  <%= @column.NumberOfFloor %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @column.Status %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @column.Information %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @column.Notes %>
+</p>
+
+<%= link_to 'Edit', edit_column_path(@column) %> |
+<%= link_to 'Back', columns_path %>

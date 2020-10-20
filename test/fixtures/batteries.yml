@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  building: one
+  PropertyType: MyString
+  Status: MyString
+  employee: one
+  DateOfCommissioning: 2020-10-20 12:55:11
+  DateOfLastInspect: 2020-10-20 12:55:11
+  CertificateOfOperation: MyString
+
+two:
+  building: two
+  PropertyType: MyString
+  Status: MyString
+  employee: two
+  DateOfCommissioning: 2020-10-20 12:55:11
+  DateOfLastInspect: 2020-10-20 12:55:11
+  CertificateOfOperation: MyString

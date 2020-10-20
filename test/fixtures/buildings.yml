@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  address: one
+  BuildingAdmFullName: MyString
+  BuildingAdmEmail: MyString
+  BuildingAdmPhone: MyString
+  BuildingTechFullName: MyString
+  BuildingTechEmail: MyString
+  BuildingTechPhone: MyString
+
+two:
+  customer: two
+  address: two
+  BuildingAdmFullName: MyString
+  BuildingAdmEmail: MyString
+  BuildingAdmPhone: MyString
+  BuildingTechFullName: MyString
+  BuildingTechEmail: MyString
+  BuildingTechPhone: MyString
