@@ -1,12 +1,6 @@
 
 #root
 Rails.application.routes.draw do
-  resources :quotes
-  resources :building_details
-  resources :buildings
-  resources :elevators
-  resources :columns
-  resources :batteries
   root 'rocket_elevator#index'
 
   get 'rocket_elevator/residancial'
