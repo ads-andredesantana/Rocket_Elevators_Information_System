@@ -3,9 +3,9 @@
 Rails.application.routes.draw do
   root 'rocket_elevator#index'
 
-  get 'rocket_elevator/residancial'
-  get 'rocket_elevator/commercial'
-  get 'rocket_elevator/quote'
+  get "rocket_elevator/residancial", to "rocket_elevator#residancial"
+  get "rocket_elevator/commercial", to "rocket_elevator#commercial"
+  get "rocket_elevator/quote", to "rocket_elevator#quote"
 
 
 
