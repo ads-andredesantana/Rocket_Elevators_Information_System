@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   resources :columns
   resources :batteries
   root 'rocket_elevator#index'
-
-  get "rocket_elevator/residancial", to "rocket_elevator#residancial"
-  get "rocket_elevator/commercial", to "rocket_elevator#commercial"
-  get "rocket_elevator/quote", to "rocket_elevator#quote"
+  get '/index', to: 'rocket_elevator#index'
+  get "/residancial", to: "rocket_elevator#residancial"
+  get "/commercial", to: "rocket_elevator#commercial"
+  get "/quote", to: "rocket_elevator#quote"
 
 
 
