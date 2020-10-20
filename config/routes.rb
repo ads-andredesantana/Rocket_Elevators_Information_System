@@ -1,6 +1,8 @@
 
 #root
 Rails.application.routes.draw do
+  resources :building_details
+  resources :buildings
   resources :elevators
   resources :columns
   resources :batteries
