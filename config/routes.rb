@@ -1,6 +1,9 @@
 
 #root
 Rails.application.routes.draw do
+  resources :elevators
+  resources :columns
+  resources :batteries
   root 'rocket_elevator#index'
 
   get 'rocket_elevator/residancial'
