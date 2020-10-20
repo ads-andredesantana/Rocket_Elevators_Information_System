@@ -1,0 +1,122 @@
+<%= form_with(model: quote, local: true) do |form| %>
+  <% if quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% quote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fullName %>
+    <%= form.text_field :fullName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :businessname %>
+    <%= form.text_field :businessname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :projectname %>
+    <%= form.text_field :projectname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buildingtype %>
+    <%= form.text_field :buildingtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quality %>
+    <%= form.text_field :quality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbapartment %>
+    <%= form.number_field :nbapartment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbfloor %>
+    <%= form.number_field :nbfloor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbbasement %>
+    <%= form.number_field :nbbasement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbbusiness %>
+    <%= form.number_field :nbbusiness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbparking %>
+    <%= form.number_field :nbparking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbshaft %>
+    <%= form.number_field :nbshaft %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nboccupant %>
+    <%= form.number_field :nboccupant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbcompanies %>
+    <%= form.number_field :nbcompanies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activehours %>
+    <%= form.number_field :activehours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nbelevator %>
+    <%= form.number_field :nbelevator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :elevatorprice %>
+    <%= form.text_field :elevatorprice %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtotal %>
+    <%= form.text_field :subtotal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :installfee %>
+    <%= form.text_field :installfee %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.text_field :total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
