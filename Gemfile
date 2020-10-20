@@ -85,9 +85,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Added Devise for user login
 gem 'devise', '>= 4.7.2'
 
-# Added gem Simple_token_authentication with Devise
-gem 'simple_token_authentication'
-
 #Added rails_admin as "BackOffice"
 gem 'rails_admin', '~> 2.0'
 
