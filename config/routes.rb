@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   resources :addresses
   resources :leads
   root 'rocket_elevator#index'
-
-  get 'rocket_elevator/residancial'
-  get 'rocket_elevator/commercial'
-  get 'rocket_elevator/quote'
+  get '/index', to: 'rocket_elevator#index'
+  get "/residancial", to: "rocket_elevator#residancial"
+  get "/commercial", to: "rocket_elevator#commercial"
+  get "/quote", to: "rocket_elevator#quote"
 
 
 

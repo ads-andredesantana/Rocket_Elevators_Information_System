@@ -11,6 +11,7 @@
 // about supported directives.
 //
 
+//= require quote
 //= require jquery
 //= require jquery_ujs
 //= require popper
@@ -22,14 +23,12 @@
 //= require jquery.themepunch.tools.min
 //= require jquery.mixitup.min
 //= require owl.carousel
-//= require quote
 //= require jquery.themepunch.enablelog
 //= require smoothscroll
 //= require jquery.nav.min
 //= require scripts
 //= require activestorage
 //= require turbolinks
-
 //= require rails-ujs
 
 
