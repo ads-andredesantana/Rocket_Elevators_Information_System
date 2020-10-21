@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :leads
   root 'rocket_elevator#index'
   get 'rocket_elevator/login'
+  get 'rocket_elevator/dashboard'
   get 'rocket_elevator/residancial'
   get 'rocket_elevator/commercial'
   get 'rocket_elevator/quote'
@@ -25,7 +26,7 @@ Rails.application.routes.draw do
         namespace :v1 do 
            devise_scope :user do
               #post "sign_up", to: "registrations#/admin"
-               post "sign_in", to: "main#/admin"
+               post "sign_in", to: "rocket_elevator#/admin"
            end
          end
        end
