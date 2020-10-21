@@ -78,12 +78,26 @@
                              </a>
                         </li>
 
+ 
+
+                     <% if current_user%>
                         <li>
-                            <!-- LOGIN -->
-                            <a href="/users/sign_in">
-                                LOGIN
-                            </a>
+                             <%= link_to 'Sign Out', destroy_user_session_path, method: :delete%>
                         </li>
+                    
+                    <% else %>
+                           
+                        <li>
+                            <%=link_to "sign In", new_user_session_path%>
+                        </li>
+                            <!--<%if current_user.admin %>
+                                <li>
+                                <%=link_to "/admin"%>
+                                </li>
+                            <% end %>
+                        -->
+                    <% end %>
+                           
                     </ul>
                 </nav>
             </div>

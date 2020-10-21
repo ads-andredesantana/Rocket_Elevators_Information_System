@@ -17,10 +17,10 @@ mlortie = User.create(:email => "mathieu.lortie@codeboxx.biz", :password => "roc
 tcarrier = User.create(:email => "thomas.carrier@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
 
 # Create employees
-Employee.create(users_id:1, last_name:'Genest', first_name:'Nicolas', title:'CEO')
-Employee.create(users_id:2, last_name:'Fortier',first_name:'Nadya', title:'Director')
-Employee.create(users_id:3, last_name:'Chantal',first_name:'Martin', title:'Director Assistant')
-Employee.create(users_id:4, last_name:'Houde',first_name:'Mathieu', title:'Captain')
-Employee.create(users_id:5, last_name:'Boutin',first_name:'David', title:'Engineer')
-Employee.create(users_id:6, last_name:'Lortie',first_name:'Mathieu', title:'Engineer')
-Employee.create(users_id:7, last_name:'Carrier',first_name:'Thomas', title:'Engineer')
+Employee.create(users_id:1, lastname:'Genest', firstname:'Nicolas', title_function:'CEO')
+Employee.create(users_id:2, lastname:'Fortier',firstname:'Nadya', title_function:'Director')
+Employee.create(users_id:3, lastname:'Chantal',firstname:'Martin', title_function:'Director Assistant')
+Employee.create(users_id:4, lastname:'Houde',firstname:'Mathieu', title_function:'Captain')
+Employee.create(users_id:5, lastname:'Boutin',firstname:'David', title_function:'Engineer')
+Employee.create(users_id:6, lastname:'Lortie',firstname:'Mathieu', title_function:'Engineer')
+Employee.create(users_id:7, lastname:'Carrier',firstname:'Thomas', title_function:'Engineer')
