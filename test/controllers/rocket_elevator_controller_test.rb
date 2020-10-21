@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class RocketElevatorControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get rocket_elevator_index_url
+  test "should get login" do
+    get rocket_elevator_login_url
     assert_response :success
   end
 
