@@ -2,18 +2,22 @@
 
 one:
   building: one
-  PropertyType: MyString
-  Status: MyString
+  type: 
+  status: MyString
   employee: one
-  DateOfCommissioning: 2020-10-20 12:55:11
-  DateOfLastInspect: 2020-10-20 12:55:11
-  CertificateOfOperation: MyString
+  date_of_commissioning: 2020-10-20 21:21:27
+  date_of_last_inspection: 2020-10-20 21:21:27
+  certificate_of_operations: MyString
+  information: MyText
+  notes: MyText
 
 two:
   building: two
-  PropertyType: MyString
-  Status: MyString
+  type: 
+  status: MyString
   employee: two
-  DateOfCommissioning: 2020-10-20 12:55:11
-  DateOfLastInspect: 2020-10-20 12:55:11
-  CertificateOfOperation: MyString
+  date_of_commissioning: 2020-10-20 21:21:27
+  date_of_last_inspection: 2020-10-20 21:21:27
+  certificate_of_operations: MyString
+  information: MyText
+  notes: MyText
