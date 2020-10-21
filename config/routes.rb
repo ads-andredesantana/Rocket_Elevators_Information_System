@@ -1,6 +1,7 @@
 
 #root
 Rails.application.routes.draw do
+  
   resources :elevators
   resources :columns
   resources :batteries
@@ -10,18 +11,12 @@ Rails.application.routes.draw do
   resources :addresses
   resources :leads
   root 'rocket_elevator#index'
-
+  get 'rocket_elevator/login'
   get 'rocket_elevator/residancial'
   get 'rocket_elevator/commercial'
   get 'rocket_elevator/quote'
+  
 
-
-
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-
-  #     root to:'pages#/admin'
        devise_for :users
        mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   

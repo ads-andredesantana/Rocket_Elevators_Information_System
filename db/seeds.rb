@@ -5,10 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-empployees.create(first_name:”Nicolas”last_name:"Genest", title_function:"CEO", email:"nicolas.genest@codeboxx.biz")
-empployees.create (first_name:"Nadya", last_name:"Fortier", title_function:"Director", email:"nadya.fortier@codeboxx.biz")
-empployees.create (first_name:"Martin", last_name:"Chantal", title_function:"Director Assistant", email:"martin.chantal@codeboxx.biz")
-empployees.create (first_name:"Mathieu", last_name:"Houde", title_function:"Captain", email:"mathieu.houde@codeboxx.biz")
-empployees.create ("first_name:"David", last_name:"Boutin”,title_function:"Engineer", email:"david.boutin@codeboxx.biz")
-empployees.create ("first_name:"Mathieu",last_name:"Lortie” ,title_function:"Engineer", email:"mathieu.lortie@codeboxx.biz")
-empployees.create (first_name:"Thomas", last_name:"Carrier", title_function:"Engineer", email:"thomas.carrier@codeboxx.biz")
+User.destroy_all
+Employee.destroy_all
+
+ngenest = User.create(:email => "nicolas.genest@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+nfortier = User.create(:email => "nadya.fortier@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+mchantal = User.create(:email => "martin.chantal@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+mhoude = User.create(:email => "mathieu.houde@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+dboutin = User.create(:email => "david.boutin@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+mlortie = User.create(:email => "mathieu.lortie@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+tcarrier = User.create(:email => "thomas.carrier@codeboxx.biz", :password => "rocket", :password_confirmation => "rocket")
+
+# Create employees
+Employee.create(:user_id => ngenest.id, :lastname => "Genest", :firstname => "Nicolas", :title => "CEO")
+Employee.create(:user_id => nfortier.id, :lastname => "Fortier", :firstname => "Nadya", :title => "Director")
+Employee.create(:user_id => mchantal.id, :lastname => "Chantal", :firstname => "Martin", :title => "Director Assistant")
+Employee.create(:user_id => mhoude.id, :lastname => "Houde", :firstname => "Mathieu", :title => "Captain")
+Employee.create(:user_id => dboutin.id, :lastname => "Boutin", :firstname => "David", :title => "Engineer")
+Employee.create(:user_id => mlortie.id, :lastname => "Lortie", :firstname => "Mathieu", :title => "Engineer")
+Employee.create(:user_id => tcarrier.id, :lastname => "Carrier", :firstname => "Thomas", :title => "Engineer")
