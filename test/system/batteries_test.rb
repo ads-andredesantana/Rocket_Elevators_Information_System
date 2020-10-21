@@ -14,13 +14,15 @@ class BatteriesTest < ApplicationSystemTestCase
     visit batteries_url
     click_on "New Battery"
 
-    fill_in "Certificateofoperation", with: @battery.CertificateOfOperation
-    fill_in "Dateofcommissioning", with: @battery.DateOfCommissioning
-    fill_in "Dateoflastinspect", with: @battery.DateOfLastInspect
-    fill_in "Propertytype", with: @battery.PropertyType
-    fill_in "Status", with: @battery.Status
     fill_in "Building", with: @battery.building_id
+    fill_in "Certificate of operations", with: @battery.certificate_of_operations
+    fill_in "Date of commissioning", with: @battery.date_of_commissioning
+    fill_in "Date of last inspection", with: @battery.date_of_last_inspection
     fill_in "Employee", with: @battery.employee_id
+    fill_in "Information", with: @battery.information
+    fill_in "Notes", with: @battery.notes
+    fill_in "Status", with: @battery.status
+    fill_in "Type", with: @battery.type
     click_on "Create Battery"
 
     assert_text "Battery was successfully created"
@@ -31,13 +33,15 @@ class BatteriesTest < ApplicationSystemTestCase
     visit batteries_url
     click_on "Edit", match: :first
 
-    fill_in "Certificateofoperation", with: @battery.CertificateOfOperation
-    fill_in "Dateofcommissioning", with: @battery.DateOfCommissioning
-    fill_in "Dateoflastinspect", with: @battery.DateOfLastInspect
-    fill_in "Propertytype", with: @battery.PropertyType
-    fill_in "Status", with: @battery.Status
     fill_in "Building", with: @battery.building_id
+    fill_in "Certificate of operations", with: @battery.certificate_of_operations
+    fill_in "Date of commissioning", with: @battery.date_of_commissioning
+    fill_in "Date of last inspection", with: @battery.date_of_last_inspection
     fill_in "Employee", with: @battery.employee_id
+    fill_in "Information", with: @battery.information
+    fill_in "Notes", with: @battery.notes
+    fill_in "Status", with: @battery.status
+    fill_in "Type", with: @battery.type
     click_on "Update Battery"
 
     assert_text "Battery was successfully updated"

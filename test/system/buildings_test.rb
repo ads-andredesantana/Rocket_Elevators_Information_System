@@ -14,14 +14,14 @@ class BuildingsTest < ApplicationSystemTestCase
     visit buildings_url
     click_on "New Building"
 
-    fill_in "Buildingadmemail", with: @building.BuildingAdmEmail
-    fill_in "Buildingadmfullname", with: @building.BuildingAdmFullName
-    fill_in "Buildingadmphone", with: @building.BuildingAdmPhone
-    fill_in "Buildingtechemail", with: @building.BuildingTechEmail
-    fill_in "Buildingtechfullname", with: @building.BuildingTechFullName
-    fill_in "Buildingtechphone", with: @building.BuildingTechPhone
     fill_in "Address", with: @building.address_id
     fill_in "Customer", with: @building.customer_id
+    fill_in "Email of building administrator", with: @building.email_of_building_administrator
+    fill_in "Full name of building administrator", with: @building.full_name_of_building_administrator
+    fill_in "Full name technical contact", with: @building.full_name_technical_contact
+    fill_in "Phone of building administrator", with: @building.phone_of_building_administrator
+    fill_in "Technical contact email", with: @building.technical_contact_email
+    fill_in "Technical contact phone", with: @building.technical_contact_phone
     click_on "Create Building"
 
     assert_text "Building was successfully created"
@@ -32,14 +32,14 @@ class BuildingsTest < ApplicationSystemTestCase
     visit buildings_url
     click_on "Edit", match: :first
 
-    fill_in "Buildingadmemail", with: @building.BuildingAdmEmail
-    fill_in "Buildingadmfullname", with: @building.BuildingAdmFullName
-    fill_in "Buildingadmphone", with: @building.BuildingAdmPhone
-    fill_in "Buildingtechemail", with: @building.BuildingTechEmail
-    fill_in "Buildingtechfullname", with: @building.BuildingTechFullName
-    fill_in "Buildingtechphone", with: @building.BuildingTechPhone
     fill_in "Address", with: @building.address_id
     fill_in "Customer", with: @building.customer_id
+    fill_in "Email of building administrator", with: @building.email_of_building_administrator
+    fill_in "Full name of building administrator", with: @building.full_name_of_building_administrator
+    fill_in "Full name technical contact", with: @building.full_name_technical_contact
+    fill_in "Phone of building administrator", with: @building.phone_of_building_administrator
+    fill_in "Technical contact email", with: @building.technical_contact_email
+    fill_in "Technical contact phone", with: @building.technical_contact_phone
     click_on "Update Building"
 
     assert_text "Building was successfully updated"

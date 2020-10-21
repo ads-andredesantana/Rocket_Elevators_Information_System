@@ -15,7 +15,7 @@ class BuildingDetailsTest < ApplicationSystemTestCase
     click_on "New Building Detail"
 
     fill_in "Building", with: @building_detail.building_id
-    fill_in "Key", with: @building_detail.key
+    fill_in "Information key", with: @building_detail.information_key
     fill_in "Value", with: @building_detail.value
     click_on "Create Building detail"
 
@@ -28,7 +28,7 @@ class BuildingDetailsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Building", with: @building_detail.building_id
-    fill_in "Key", with: @building_detail.key
+    fill_in "Information key", with: @building_detail.information_key
     fill_in "Value", with: @building_detail.value
     click_on "Update Building detail"
 

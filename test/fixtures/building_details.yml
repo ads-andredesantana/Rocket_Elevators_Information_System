@@ -2,10 +2,10 @@
 
 one:
   building: one
-  key: MyString
+  information_key: MyString
   value: MyString
 
 two:
   building: two
-  key: MyString
+  information_key: MyString
   value: MyString

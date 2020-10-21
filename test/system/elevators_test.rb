@@ -14,16 +14,16 @@ class ElevatorsTest < ApplicationSystemTestCase
     visit elevators_url
     click_on "New Elevator"
 
-    fill_in "Certificateofinpection", with: @elevator.CertificateOfInpection
-    fill_in "Columnid", with: @elevator.ColumnId_id
-    fill_in "Dateofcommissioning", with: @elevator.DateOfCommissioning
-    fill_in "Dateoflastinspection", with: @elevator.DateOfLastInspection
-    fill_in "Information", with: @elevator.Information
-    fill_in "Model", with: @elevator.Model
-    fill_in "Notes", with: @elevator.Notes
-    fill_in "Propertytype", with: @elevator.PropertyType
-    fill_in "Status", with: @elevator.Status
-    fill_in "Serialnumber", with: @elevator.serialNumber
+    fill_in "Certificate of inspection", with: @elevator.certificate_of_inspection
+    fill_in "Column", with: @elevator.column_id
+    fill_in "Date of commissioning", with: @elevator.date_of_commissioning
+    fill_in "Date of last inspection", with: @elevator.date_of_last_inspection
+    fill_in "Information", with: @elevator.information
+    fill_in "Model", with: @elevator.model
+    fill_in "Notes", with: @elevator.notes
+    fill_in "Serial number", with: @elevator.serial_number
+    fill_in "Status", with: @elevator.status
+    fill_in "Type", with: @elevator.type
     click_on "Create Elevator"
 
     assert_text "Elevator was successfully created"
@@ -34,16 +34,16 @@ class ElevatorsTest < ApplicationSystemTestCase
     visit elevators_url
     click_on "Edit", match: :first
 
-    fill_in "Certificateofinpection", with: @elevator.CertificateOfInpection
-    fill_in "Columnid", with: @elevator.ColumnId_id
-    fill_in "Dateofcommissioning", with: @elevator.DateOfCommissioning
-    fill_in "Dateoflastinspection", with: @elevator.DateOfLastInspection
-    fill_in "Information", with: @elevator.Information
-    fill_in "Model", with: @elevator.Model
-    fill_in "Notes", with: @elevator.Notes
-    fill_in "Propertytype", with: @elevator.PropertyType
-    fill_in "Status", with: @elevator.Status
-    fill_in "Serialnumber", with: @elevator.serialNumber
+    fill_in "Certificate of inspection", with: @elevator.certificate_of_inspection
+    fill_in "Column", with: @elevator.column_id
+    fill_in "Date of commissioning", with: @elevator.date_of_commissioning
+    fill_in "Date of last inspection", with: @elevator.date_of_last_inspection
+    fill_in "Information", with: @elevator.information
+    fill_in "Model", with: @elevator.model
+    fill_in "Notes", with: @elevator.notes
+    fill_in "Serial number", with: @elevator.serial_number
+    fill_in "Status", with: @elevator.status
+    fill_in "Type", with: @elevator.type
     click_on "Update Elevator"
 
     assert_text "Elevator was successfully updated"

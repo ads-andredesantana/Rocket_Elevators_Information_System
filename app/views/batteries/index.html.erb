@@ -6,12 +6,14 @@
   <thead>
     <tr>
       <th>Building</th>
-      <th>Propertytype</th>
+      <th>Type</th>
       <th>Status</th>
       <th>Employee</th>
-      <th>Dateofcommissioning</th>
-      <th>Dateoflastinspect</th>
-      <th>Certificateofoperation</th>
+      <th>Date of commissioning</th>
+      <th>Date of last inspection</th>
+      <th>Certificate of operations</th>
+      <th>Information</th>
+      <th>Notes</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,12 +22,14 @@
     <% @batteries.each do |battery| %>
       <tr>
         <td><%= battery.building %></td>
-        <td><%= battery.PropertyType %></td>
-        <td><%= battery.Status %></td>
+        <td><%= battery.type %></td>
+        <td><%= battery.status %></td>
         <td><%= battery.employee %></td>
-        <td><%= battery.DateOfCommissioning %></td>
-        <td><%= battery.DateOfLastInspect %></td>
-        <td><%= battery.CertificateOfOperation %></td>
+        <td><%= battery.date_of_commissioning %></td>
+        <td><%= battery.date_of_last_inspection %></td>
+        <td><%= battery.certificate_of_operations %></td>
+        <td><%= battery.information %></td>
+        <td><%= battery.notes %></td>
         <td><%= link_to 'Show', battery %></td>
         <td><%= link_to 'Edit', edit_battery_path(battery) %></td>
         <td><%= link_to 'Destroy', battery, method: :delete, data: { confirm: 'Are you sure?' } %></td>

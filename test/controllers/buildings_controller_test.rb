@@ -17,7 +17,7 @@ class BuildingsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create building" do
     assert_difference('Building.count') do
-      post buildings_url, params: { building: { BuildingAdmEmail: @building.BuildingAdmEmail, BuildingAdmFullName: @building.BuildingAdmFullName, BuildingAdmPhone: @building.BuildingAdmPhone, BuildingTechEmail: @building.BuildingTechEmail, BuildingTechFullName: @building.BuildingTechFullName, BuildingTechPhone: @building.BuildingTechPhone, address_id: @building.address_id, customer_id: @building.customer_id } }
+      post buildings_url, params: { building: { address_id: @building.address_id, customer_id: @building.customer_id, email_of_building_administrator: @building.email_of_building_administrator, full_name_of_building_administrator: @building.full_name_of_building_administrator, full_name_technical_contact: @building.full_name_technical_contact, phone_of_building_administrator: @building.phone_of_building_administrator, technical_contact_email: @building.technical_contact_email, technical_contact_phone: @building.technical_contact_phone } }
     end
 
     assert_redirected_to building_url(Building.last)
@@ -34,7 +34,7 @@ class BuildingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update building" do
-    patch building_url(@building), params: { building: { BuildingAdmEmail: @building.BuildingAdmEmail, BuildingAdmFullName: @building.BuildingAdmFullName, BuildingAdmPhone: @building.BuildingAdmPhone, BuildingTechEmail: @building.BuildingTechEmail, BuildingTechFullName: @building.BuildingTechFullName, BuildingTechPhone: @building.BuildingTechPhone, address_id: @building.address_id, customer_id: @building.customer_id } }
+    patch building_url(@building), params: { building: { address_id: @building.address_id, customer_id: @building.customer_id, email_of_building_administrator: @building.email_of_building_administrator, full_name_of_building_administrator: @building.full_name_of_building_administrator, full_name_technical_contact: @building.full_name_technical_contact, phone_of_building_administrator: @building.phone_of_building_administrator, technical_contact_email: @building.technical_contact_email, technical_contact_phone: @building.technical_contact_phone } }
     assert_redirected_to building_url(@building)
   end
 

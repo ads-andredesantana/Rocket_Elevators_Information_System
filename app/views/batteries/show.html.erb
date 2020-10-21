@@ -6,13 +6,13 @@
 </p>
 
 <p>
-  <strong>Propertytype:</strong>
-  <%= @battery.PropertyType %>
+  <strong>Type:</strong>
+  <%= @battery.type %>
 </p>
 
 <p>
   <strong>Status:</strong>
-  <%= @battery.Status %>
+  <%= @battery.status %>
 </p>
 
 <p>
@@ -21,18 +21,28 @@
 </p>
 
 <p>
-  <strong>Dateofcommissioning:</strong>
-  <%= @battery.DateOfCommissioning %>
+  <strong>Date of commissioning:</strong>
+  <%= @battery.date_of_commissioning %>
 </p>
 
 <p>
-  <strong>Dateoflastinspect:</strong>
-  <%= @battery.DateOfLastInspect %>
+  <strong>Date of last inspection:</strong>
+  <%= @battery.date_of_last_inspection %>
 </p>
 
 <p>
-  <strong>Certificateofoperation:</strong>
-  <%= @battery.CertificateOfOperation %>
+  <strong>Certificate of operations:</strong>
+  <%= @battery.certificate_of_operations %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @battery.information %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @battery.notes %>
 </p>
 
 <%= link_to 'Edit', edit_battery_path(@battery) %> |

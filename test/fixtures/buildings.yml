@@ -3,19 +3,19 @@
 one:
   customer: one
   address: one
-  BuildingAdmFullName: MyString
-  BuildingAdmEmail: MyString
-  BuildingAdmPhone: MyString
-  BuildingTechFullName: MyString
-  BuildingTechEmail: MyString
-  BuildingTechPhone: MyString
+  full_name_of_building_administrator: MyString
+  email_of_building_administrator: MyString
+  phone_of_building_administrator: 1
+  full_name_technical_contact: MyString
+  technical_contact_email: MyString
+  technical_contact_phone: 1
 
 two:
   customer: two
   address: two
-  BuildingAdmFullName: MyString
-  BuildingAdmEmail: MyString
-  BuildingAdmPhone: MyString
-  BuildingTechFullName: MyString
-  BuildingTechEmail: MyString
-  BuildingTechPhone: MyString
+  full_name_of_building_administrator: MyString
+  email_of_building_administrator: MyString
+  phone_of_building_administrator: 1
+  full_name_technical_contact: MyString
+  technical_contact_email: MyString
+  technical_contact_phone: 1

@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :PropertyType %>
-    <%= form.text_field :PropertyType %>
+    <%= form.label :type %>
+    <%= form.text_field :type %>
   </div>
 
   <div class="field">
-    <%= form.label :Status %>
-    <%= form.text_field :Status %>
+    <%= form.label :status %>
+    <%= form.text_field :status %>
   </div>
 
   <div class="field">
@@ -32,18 +32,28 @@
   </div>
 
   <div class="field">
-    <%= form.label :DateOfCommissioning %>
-    <%= form.datetime_select :DateOfCommissioning %>
+    <%= form.label :date_of_commissioning %>
+    <%= form.datetime_select :date_of_commissioning %>
   </div>
 
   <div class="field">
-    <%= form.label :DateOfLastInspect %>
-    <%= form.datetime_select :DateOfLastInspect %>
+    <%= form.label :date_of_last_inspection %>
+    <%= form.datetime_select :date_of_last_inspection %>
   </div>
 
   <div class="field">
-    <%= form.label :CertificateOfOperation %>
-    <%= form.text_field :CertificateOfOperation %>
+    <%= form.label :certificate_of_operations %>
+    <%= form.text_field :certificate_of_operations %>
+  </div>
+
+  <div class="field">
+    <%= form.label :information %>
+    <%= form.text_area :information %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_area :notes %>
   </div>
 
   <div class="actions">
