@@ -26,7 +26,7 @@
             </button>
 
             <!-- Logo -->
-            <a class="logo float-left scrollTo" href="index.html">
+            <a class="logo float-left scrollTo" href="/index">
                 
                 <%= image_tag("r2.png", alt: "Logo Rocket Elevators", class: "img-fluid" ) %>
             </a>
@@ -36,7 +36,7 @@
                     <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
                         <li class="active">
                             <!-- HOME -->
-                            <a href="">
+                            <a href="/index">
                                 HOME
                             </a>
                         </li>
@@ -44,9 +44,9 @@
                             <!-- SERVICES -->
                             <a class="dropdown-toggle" href="#services">SERVICES</a>
                             <ul class="dropdown-menu white-space=nowrap">
-                                <li><a href="rocket_elevator/residancial">Residential</a></li>
-                                <li><a href="rocket_elevator/commercial">Corporate</a></li>
-                                <li><a href="rocket_elevator/quote">Get a Quote</a></li>
+                                <li><a href="/residancial">Residential</a></li>
+                                <li><a href="/commercial">Corporate</a></li>
+                                <li><a href="/quote">Get a Quote</a></li>
                             </ul>
                         </li>
 
@@ -79,24 +79,8 @@
                         </li>
 
                         <li>
-                            <!-- ACCOUNT -->
-                            <a href="rocket_elevator/admin">
-                                ACCOUNT
-                            </a>
-                        </li> 
-
-                        <li>
-                            <!-- ADMIN -->
-                            <a class="dropdown-toggle" href="#services">ADMIN</a>
-                            <ul class="dropdown-menu white-space=nowrap">
-                                <li><a href="rocket_elevator/residancial">BACK OFFICE</a></li>
-                                <li><a href="rocket_elevator/commercial">CHARTS</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
                             <!-- LOGIN -->
-                            <a href="/login">
+                            <a href="/users/sign_in">
                                 LOGIN
                             </a>
                         </li>
@@ -146,11 +130,11 @@
 
                 </div>
                 <!-- /col #2 -->
-                <ul class="float-right m-0 list-inline mobile-block">	
-                    <li><a href="https://www.facebook.com" title="Facebook" target="_new"><img src="assets/images/icons8-facebook-48.png" alt="Facebook" title="Facebook" height="24px" width="24px"></a></li>
-                    <li><a href="https://twitter.com" title="Twitter" target="_new"><img src="assets/images/icons8-twitter-squared-120.png" alt="Twitter" title="Twitter" height="34px" width="34px"></a></li>
-                    <li><a href="https://www.instagram.com" title="Instagram" target="_new"><img src="assets/images/icons8-instagram-24.png" alt="Instagram" height="34px" width="34px"></a></li>
-                    <li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><img src="assets/images/icons8-linkedin-2-32.png" alt="LinkedIn" height="34px" width="34px"></a></li>
+                <ul class="float-right m-0 list-inline mobile-block">	        
+                    <li><a href="https://www.facebook.com" title="Facebook" target="_new"><%= image_tag("icons8-facebook-48.png", alt: "Facebook", class: "img-fluid", :size => '24x24' ) %></a></li>
+                    <li><a href="https://twitter.com" title="Twitter" target="_new"><%= image_tag("icons8-twitter-squared-120.png", alt: "Twitter", class: "img-fluid", :size => '24x24' ) %></a></li>
+                    <li><a href="https://www.instagram.com" title="Instagram" target="_new"><%= image_tag("icons8-instagram-24.png", alt: "Instagram", class: "img-fluid", :size => '24x24' ) %></a></li>
+                    <li><a href="https://www.linkedin.com" title="LinkedIn" target="_new"><%= image_tag("icons8-linkedin-2-32.png", alt: "LinkedIn", class: "img-fluid", :size => '24x24' ) %></a></li>
                     </ul>
             </div>
         </div>
