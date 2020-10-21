@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Battery</th>
-      <th>Propertytype</th>
-      <th>Numberoffloor</th>
+      <th>Type</th>
+      <th>Number of floors served</th>
       <th>Status</th>
       <th>Information</th>
       <th>Notes</th>
@@ -19,11 +19,11 @@
     <% @columns.each do |column| %>
       <tr>
         <td><%= column.battery %></td>
-        <td><%= column.PropertyType %></td>
-        <td><%= column.NumberOfFloor %></td>
-        <td><%= column.Status %></td>
-        <td><%= column.Information %></td>
-        <td><%= column.Notes %></td>
+        <td><%= column.type %></td>
+        <td><%= column.number_of_floors_served %></td>
+        <td><%= column.status %></td>
+        <td><%= column.information %></td>
+        <td><%= column.notes %></td>
         <td><%= link_to 'Show', column %></td>
         <td><%= link_to 'Edit', edit_column_path(column) %></td>
         <td><%= link_to 'Destroy', column, method: :delete, data: { confirm: 'Are you sure?' } %></td>

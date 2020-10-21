@@ -7,12 +7,12 @@
     <tr>
       <th>Customer</th>
       <th>Address</th>
-      <th>Buildingadmfullname</th>
-      <th>Buildingadmemail</th>
-      <th>Buildingadmphone</th>
-      <th>Buildingtechfullname</th>
-      <th>Buildingtechemail</th>
-      <th>Buildingtechphone</th>
+      <th>Full name of building administrator</th>
+      <th>Email of building administrator</th>
+      <th>Phone of building administrator</th>
+      <th>Full name technical contact</th>
+      <th>Technical contact email</th>
+      <th>Technical contact phone</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,12 +22,12 @@
       <tr>
         <td><%= building.customer %></td>
         <td><%= building.address %></td>
-        <td><%= building.BuildingAdmFullName %></td>
-        <td><%= building.BuildingAdmEmail %></td>
-        <td><%= building.BuildingAdmPhone %></td>
-        <td><%= building.BuildingTechFullName %></td>
-        <td><%= building.BuildingTechEmail %></td>
-        <td><%= building.BuildingTechPhone %></td>
+        <td><%= building.full_name_of_building_administrator %></td>
+        <td><%= building.email_of_building_administrator %></td>
+        <td><%= building.phone_of_building_administrator %></td>
+        <td><%= building.full_name_technical_contact %></td>
+        <td><%= building.technical_contact_email %></td>
+        <td><%= building.technical_contact_phone %></td>
         <td><%= link_to 'Show', building %></td>
         <td><%= link_to 'Edit', edit_building_path(building) %></td>
         <td><%= link_to 'Destroy', building, method: :delete, data: { confirm: 'Are you sure?' } %></td>
