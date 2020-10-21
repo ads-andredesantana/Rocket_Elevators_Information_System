@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Building</th>
-      <th>Key</th>
+      <th>Information key</th>
       <th>Value</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +16,7 @@
     <% @building_details.each do |building_detail| %>
       <tr>
         <td><%= building_detail.building %></td>
-        <td><%= building_detail.key %></td>
+        <td><%= building_detail.information_key %></td>
         <td><%= building_detail.value %></td>
         <td><%= link_to 'Show', building_detail %></td>
         <td><%= link_to 'Edit', edit_building_detail_path(building_detail) %></td>

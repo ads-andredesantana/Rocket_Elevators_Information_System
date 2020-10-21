@@ -2,16 +2,16 @@
 
 one:
   battery: one
-  PropertyType: MyString
-  NumberOfFloor: MyString
-  Status: MyString
-  Information: MyString
-  Notes: MyText
+  type: 
+  number_of_floors_served: 1
+  status: MyString
+  information: MyText
+  notes: MyText
 
 two:
   battery: two
-  PropertyType: MyString
-  NumberOfFloor: MyString
-  Status: MyString
-  Information: MyString
-  Notes: MyText
+  type: 
+  number_of_floors_served: 1
+  status: MyString
+  information: MyText
+  notes: MyText

@@ -14,12 +14,12 @@ class ColumnsTest < ApplicationSystemTestCase
     visit columns_url
     click_on "New Column"
 
-    fill_in "Information", with: @column.Information
-    fill_in "Notes", with: @column.Notes
-    fill_in "Numberoffloor", with: @column.NumberOfFloor
-    fill_in "Propertytype", with: @column.PropertyType
-    fill_in "Status", with: @column.Status
     fill_in "Battery", with: @column.battery_id
+    fill_in "Information", with: @column.information
+    fill_in "Notes", with: @column.notes
+    fill_in "Number of floors served", with: @column.number_of_floors_served
+    fill_in "Status", with: @column.status
+    fill_in "Type", with: @column.type
     click_on "Create Column"
 
     assert_text "Column was successfully created"
@@ -30,12 +30,12 @@ class ColumnsTest < ApplicationSystemTestCase
     visit columns_url
     click_on "Edit", match: :first
 
-    fill_in "Information", with: @column.Information
-    fill_in "Notes", with: @column.Notes
-    fill_in "Numberoffloor", with: @column.NumberOfFloor
-    fill_in "Propertytype", with: @column.PropertyType
-    fill_in "Status", with: @column.Status
     fill_in "Battery", with: @column.battery_id
+    fill_in "Information", with: @column.information
+    fill_in "Notes", with: @column.notes
+    fill_in "Number of floors served", with: @column.number_of_floors_served
+    fill_in "Status", with: @column.status
+    fill_in "Type", with: @column.type
     click_on "Update Column"
 
     assert_text "Column was successfully updated"

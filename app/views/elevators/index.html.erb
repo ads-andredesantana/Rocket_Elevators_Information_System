@@ -5,14 +5,14 @@
 <table>
   <thead>
     <tr>
-      <th>Columnid</th>
-      <th>Serialnumber</th>
+      <th>Column</th>
+      <th>Serial number</th>
       <th>Model</th>
-      <th>Propertytype</th>
+      <th>Type</th>
       <th>Status</th>
-      <th>Dateofcommissioning</th>
-      <th>Dateoflastinspection</th>
-      <th>Certificateofinpection</th>
+      <th>Date of commissioning</th>
+      <th>Date of last inspection</th>
+      <th>Certificate of inspection</th>
       <th>Information</th>
       <th>Notes</th>
       <th colspan="3"></th>
@@ -22,16 +22,16 @@
   <tbody>
     <% @elevators.each do |elevator| %>
       <tr>
-        <td><%= elevator.ColumnId %></td>
-        <td><%= elevator.serialNumber %></td>
-        <td><%= elevator.Model %></td>
-        <td><%= elevator.PropertyType %></td>
-        <td><%= elevator.Status %></td>
-        <td><%= elevator.DateOfCommissioning %></td>
-        <td><%= elevator.DateOfLastInspection %></td>
-        <td><%= elevator.CertificateOfInpection %></td>
-        <td><%= elevator.Information %></td>
-        <td><%= elevator.Notes %></td>
+        <td><%= elevator.column %></td>
+        <td><%= elevator.serial_number %></td>
+        <td><%= elevator.model %></td>
+        <td><%= elevator.type %></td>
+        <td><%= elevator.status %></td>
+        <td><%= elevator.date_of_commissioning %></td>
+        <td><%= elevator.date_of_last_inspection %></td>
+        <td><%= elevator.certificate_of_inspection %></td>
+        <td><%= elevator.information %></td>
+        <td><%= elevator.notes %></td>
         <td><%= link_to 'Show', elevator %></td>
         <td><%= link_to 'Edit', edit_elevator_path(elevator) %></td>
         <td><%= link_to 'Destroy', elevator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
