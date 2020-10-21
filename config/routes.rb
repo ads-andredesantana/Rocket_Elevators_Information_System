@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "/residancial", to: "rocket_elevator#residancial"
   get "/commercial", to: "rocket_elevator#commercial"
   get "/quote", to: "rocket_elevator#quote"
+  get "/login", to: "rocket_elevator#login"
+  
 
 
 
