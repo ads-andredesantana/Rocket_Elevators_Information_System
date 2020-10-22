@@ -1,4 +1,4 @@
-
+console.log("allo")
 $("#ApartNumber").hide();
 $("#NumberBusiness").hide();
 $("#NumberFloor").hide();
@@ -13,13 +13,13 @@ $("#Elevatorcost").hide();
 $("#Totalelevatorcost").hide();
 $("#Totalinstal").hide();
 $("#Fulltotal").hide();
-
+console.log("allo")
 
 
 
 $('#BuildingType').on('change', function () {
     var TypeValue = $("#BuildingType option:selected").val();
-   
+   console.log("allo")
    if(TypeValue == "Residential"){
                 $("#ApartNumber").show();
                 $("#NumberFloor").show();
@@ -113,7 +113,7 @@ $('#BuildingType').on('change', function () {
     var NumberBusiness = document.getElementById('Number_Business');
     var NumberFloor = document.getElementById('Number_Floor');
     var BasementNumber = document.getElementById('Basement_Number');
-    var NumberParking = document.getElementById('NumberParking'); 
+    var NumberParking = document.getElementById('Number_Parking'); 
     var Numbercage = document.getElementById('Number_cages');
     var Occupantperfloors = document.getElementById('Occupant_per_floors'); 
     var NumberHour = document.getElementById('Number_Hour');
