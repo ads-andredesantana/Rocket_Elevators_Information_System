@@ -11,7 +11,7 @@
 // about supported directives.
 //
 
-//= require quote
+
 //= require jquery
 //= require jquery_ujs
 //= require popper
@@ -30,7 +30,7 @@
 //= require activestorage
 //= require turbolinks
 //= require rails-ujs
-
+//= require quote
 
 
 

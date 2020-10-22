@@ -90,11 +90,7 @@
                         <li>
                             <%=link_to "sign In", new_user_session_path%>
                         </li>
-                           <%if current_user.admin %>
-                                <li>
-                                <%=link_to "/admin"%>
-                                </li>
-                            <% end %>
+
                     <% end %>
                            
                     </ul>

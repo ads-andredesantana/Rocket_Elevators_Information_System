@@ -1,4 +1,3 @@
-
 $("#ApartNumber").hide();
 $("#NumberBusiness").hide();
 $("#NumberFloor").hide();
