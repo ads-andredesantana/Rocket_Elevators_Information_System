@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_010308) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "users_id"
+    t.bigint "user_id"
     t.string "company_name"
     t.bigint "address_id"
     t.string "full_name_of_contact"
@@ -91,7 +91,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_010308) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["address_id"], name: "index_customers_on_address_id"
-    t.index ["users_id"], name: "index_customers_on_users_id"
+    t.index ["user_id"], name: "index_customers_on_user_id"
   end
 
   create_table "elevators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -111,13 +111,13 @@ ActiveRecord::Schema.define(version: 2020_10_22_010308) do
   end
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "users_id"
+    t.bigint "user_id"
     t.string "lastname"
     t.string "firstname"
     t.string "title_function"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_employees_on_users_id"
+    t.index ["user_id"], name: "index_employees_on_user_id"
   end
 
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -169,7 +169,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_010308) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "authentication_token", limit: 30
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.index ["authentication_token"], name: "index_users_on_authentication_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -182,7 +182,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_010308) do
   add_foreign_key "buildings", "customers"
   add_foreign_key "columns", "batteries"
   add_foreign_key "customers", "addresses"
-  add_foreign_key "customers", "users", column: "users_id"
+  add_foreign_key "customers", "users"
   add_foreign_key "elevators", "columns"
-  add_foreign_key "employees", "users", column: "users_id"
+  add_foreign_key "employees", "users"
 end

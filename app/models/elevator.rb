@@ -5,5 +5,4 @@ class Elevator < ApplicationRecord
     return self.Column.battery.building.customer.user.id
   end
 end
-  
-end
+

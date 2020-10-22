@@ -11,12 +11,13 @@ Rails.application.routes.draw do
   resources :addresses
   resources :leads
   root 'rocket_elevator#index'
+  root :to => "home#/admin"
   get '/index', to: 'rocket_elevator#index'
   get "/residancial", to: "rocket_elevator#residancial"
   get "/commercial", to: "rocket_elevator#commercial"
   get "/quote", to: "rocket_elevator#quote"
-  get "/login", to: "rocket_elevator#login"
-  
+  #get "/login", to: ""
+
   
 #  root to: "home#index"
 
