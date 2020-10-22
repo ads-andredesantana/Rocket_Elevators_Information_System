@@ -1,6 +1,7 @@
 
 #root
 Rails.application.routes.draw do
+ 
   resources :elevators
   resources :columns
   resources :batteries
@@ -16,16 +17,15 @@ Rails.application.routes.draw do
   get "/quote", to: "rocket_elevator#quote"
   get "/login", to: "rocket_elevator#login"
   
-
+  
+#  root to: "home#index"
 
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-
-  #     root to:'pages#/admin'
        devise_for :users
-       mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+      mount RailsAdmin::Engine => '/', as: 'rails_admin'
   
   
       namespace :api, defaults: {format: :json} do

@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_one :employee
+  has_one :customer
   #belongs_to :empployees
   #acts_as_token_authenticatable
   # Include default devise modules. Others available are:
