@@ -1,24 +1,17 @@
 class LeadsController < ApplicationController
   before_action :set_lead, only: [:show, :edit, :update, :destroy]
 
-   GET /leads
-  # GET /leads.json
   def index
     @leads = Lead.all
   end
 
   
-
-  # GET /leads/new
   def new
     @lead = Lead.new
     lead.save!
   end
 
  
-
-  # POST /leads
-  # POST /leads.json
   def create
     @lead = Lead.new(lead_params)
 

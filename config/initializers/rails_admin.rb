@@ -1,8 +1,8 @@
 RailsAdmin.config do |config|
 
-config.navigation_static_links = {
-  'Dashboard' => '/admin' 
-}
+# config.navigation_static_links = {
+#   'Dashboard' => '/admin' 
+# }
   ### Popular gems integration
 
   ## == Devise ==
