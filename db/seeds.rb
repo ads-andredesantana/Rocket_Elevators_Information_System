@@ -46,6 +46,3 @@ type = ["Residential", "Commercial", "Corporate", "Hybrid"]
 service_quality = ["Standard", "Premium", "Excelium"]
 entity = ["Building", "Customer"]
 
-
-#create addresses
-

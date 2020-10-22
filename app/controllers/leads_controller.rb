@@ -7,7 +7,6 @@ class LeadsController < ApplicationController
 
   
 
-  
   def new
     @lead = Lead.new
     lead.save!
