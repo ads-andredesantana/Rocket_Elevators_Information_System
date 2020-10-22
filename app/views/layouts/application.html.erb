@@ -82,13 +82,19 @@
 
                      <% if current_user%>
                         <li>
-                             <%= link_to 'Sign Out', destroy_user_session_path, method: :delete%>
+                             <a href= "">
+                             ADMIN
+                        </li> 
+                        <li>
+                             <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete%>
                         </li>
+                        
+                    
                     
                     <% else %>
                            
                         <li>
-                            <%=link_to "sign In", new_user_session_path%>
+                            <%=link_to "SIGN IN", new_user_session_path%>
                         </li>
 
                     <% end %>
