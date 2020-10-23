@@ -188,19 +188,4 @@ column_id_for_elevator = [*1..80]
     :notes => Faker::Types.rb_string)
 }
 
-
-# 200.times 
-#     Elevator.create!(
-#     column_id: column_id_for_elevator.sample, 
-#     serial_number: Faker::Code.isbn,
-#     model: service_quality.sample, 
-#     elevator_type: building_type.sample,
-#     status: status_type.sample,
-#     date_of_commissioning: Faker::Time.between(from: 3.years.ago, to: Date.today), 
-#     date_of_last_inspection: Faker::Time.between(from: 3.years.ago, to: Date.today), 
-#     certificate_of_inspection: Faker::Code.isbn, 
-#     information: Faker::Types.rb_string, 
-#     notes: Faker::Types.rb_string
-# )
-
-# p "Create #{Elevator.count} elevators"
+p "Create #{Elevator.count} elevators"
