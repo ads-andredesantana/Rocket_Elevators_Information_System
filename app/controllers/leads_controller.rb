@@ -5,31 +5,20 @@ class LeadsController < ApplicationController
     @leads = Lead.all
   end
 
-  
 
-  def new
-    @lead = Lead.new
-    lead.save!
-  end
-
-  def create
-    @lead = Lead.new(lead_params)
-
-    respond_to do |format|
-        if @lead.save
-          format.html { redirect_to @lead, notice: 'Lead was successfully created.' }
-          format.json { render :show, status: :created, location: @lead }
-        else
-          format.html { render :new }
-          format.json { render json: @lead.errors, status: :unprocessable_entity }
-        end
-      end
-    end
-
- 
-
-    # Only allow a list of trusted parameters through.
-    def lead_params
-      params.require(:lead).permit(:full_name, :company_name, :phone, :project_name, :project_description, :department_in_charge_of_elevators, :message, :attached_file)
+   def create    
+    lead = Lead.new
+    lead.fullName = params[:fullName]
+    lead.companyName = params[:companyName]   
+    lead.email = params[:email]   
+    lead.phone = params[:phone]   
+    lead.projectName = params[:projectName]   
+    lead.projectDescription = params[:projectDescription]   
+    lead.department = params[:department]  
+    lead.subject = params[:subject]   
+    lead.message = params[:message]   
+    lead.attachedFile = params[:attachedFile]   
+    
+    lead.save   
     end
   end

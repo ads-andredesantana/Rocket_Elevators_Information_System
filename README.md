@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Making a static website into a dynamic site by implementing Ruby on rails(MVC model). With the help of gems like rails-admin and devise, we created a back office that contains pertinent company information regarding customers, clients and admins with each having appropriate access. The website was deployed on a server.We also created a relational database and a data warehouse for decision making.
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.7.1 
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation in mysql and postgresql
 
 * Database initialization
 
-* How to run the test suite
+* Run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Deployment 
 
-* Deployment instructions
 
-* ...
+How to connect to the backoffice
+
+To connect with a employee account, all default employee are in db/seeds.rb. All the employee have the same default password rocket. 
