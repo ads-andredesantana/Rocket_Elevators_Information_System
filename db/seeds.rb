@@ -183,9 +183,9 @@ column_id_for_elevator = [*1..20]
     :model => service_quality.sample, 
     :elevator_type   => building_type.sample,
     :status => status_type.sample, battery_id_for_column = [*1..20]
-    :date_of_commissioning => Faker::Date.between(from: 3.years.ago, to: Date.today), 
-    :date_of_last_inspection=> Faker::Date.between(from: 3.years.ago, to: Date.today), 
-    :certificate_of_inspection=> Faker::Code.isbn, 
+    :date_of_commissioning => Faker::Date.between(from: 3.years.ago, to: Date.today)
+    :date_of_last_inspection => Faker::Date.between(from: 3.years.ago, to: Date.today)
+    :certificate_of_inspection => Faker::Code.isbn, 
     :information => Faker::Types.rb_string, 
     :notes => Faker::Types.rb_string)
 }
