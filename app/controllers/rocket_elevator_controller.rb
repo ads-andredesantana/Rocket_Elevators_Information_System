@@ -11,6 +11,12 @@ class RocketElevatorController < ApplicationController
   def quote
   end
 
+  def news_press1
+  end
+
+  def portfolio_detail_modal_1
+  end
+
   def login
   end
   
