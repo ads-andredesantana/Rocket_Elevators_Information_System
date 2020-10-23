@@ -15,7 +15,10 @@ Rails.application.routes.draw do
   get "/residancial", to: "rocket_elevator#residancial"
   get "/commercial", to: "rocket_elevator#commercial"
   get "/quote", to: "rocket_elevator#quote"
-  #get "/login", to: ""
+  get "/news_press1", to: "rocket_elevator#news_press1"
+  get "/portfolio_detail_modal_1.html", to: "rocket_elevators#portfolio_detail_modal_1"
+
+  # get "/login", to: ""
 
   
 #  root to: "home#index"

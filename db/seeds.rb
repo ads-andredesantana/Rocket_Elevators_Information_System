@@ -161,7 +161,11 @@ p "Create #{Battery.count} batteries"
 # Create columns
 battery_id_for_column = [*1..20]
 
+<<<<<<< HEAD
 .times {
+=======
+20.times {
+>>>>>>> master
     Column.create!(
     :battery_id => battery_id_for_column.delete(battery_id_for_column.sample), 
     :column_type => building_type.sample, 
@@ -174,18 +178,20 @@ battery_id_for_column = [*1..20]
 p "Create #{Column.count} columns"
 
 # Create elevators
-# column_id_for_elevator = [*1..20]
+column_id_for_elevator = [*1..80]
 
+# 200.times 
+#     Elevator.create!(
+#     column_id: column_id_for_elevator.sample, 
+#     serial_number: Faker::Code.isbn,
+#     model: service_quality.sample, 
+#     elevator_type: building_type.sample,
+#     status: status_type.sample,
+#     date_of_commissioning: Faker::Time.between(from: 3.years.ago, to: Time.today), 
+#     date_of_last_inspection: Faker::Time.between(from: 3.years.ago, to: Time.today), 
+#     certificate_of_inspection: Faker::Code.isbn, 
+#     information: Faker::Types.rb_string, 
+#     notes: Faker::Types.rb_string
+# )
 
-# 20.times {
-#     Elevator.create(:Column_id => column_id_for_elevator.delete(column_id_for_elevator.sample), 
-#     :serial_number => Faker::Code.isbn, :Model => service_quality.sample, 
-#     :elevator_type  => building_type.sample,:Status => status_type.sample, 
-#     :date_of_commissioning => Faker::Date.between(from: 3.years.ago, to: Date.today), 
-#     :date_of_last_inspection => Faker::Date.between(from: 3.years.ago, to: Date.today), 
-#     :certificate_of_inspection => Faker::Code.isbn, :information => Faker::Types.rb_string, 
-#     :notes => Faker::Types.rb_string)
-# }
-
-
-#  p "Create #{Elevator.count} elevators"
+# # p "Create #{Elevator.count} elevators"
