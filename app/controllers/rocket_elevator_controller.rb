@@ -14,7 +14,19 @@ class RocketElevatorController < ApplicationController
   def news_press1
   end
 
-  def portfolio_detail_modal_1
+  def news_press2
+  end
+
+  def news_press3
+  end
+
+  def news_press4
+  end
+  
+  def news_press5
+  end
+
+  def news_press6
   end
 
   def login
