@@ -1,5 +1,6 @@
 class Elevator < ApplicationRecord
-  belongs_to :Column
+  belongs_to :column
+  has_many :elevator
 
   def userid
     return self.Column.battery.building.customer.user.id
