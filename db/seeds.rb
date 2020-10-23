@@ -146,8 +146,8 @@ building_id_for_battery = [*1..20]
 employee_id_for_battery = [*1..20]
 
 20.times {
-    Battery.create(
-    :building_id => building_id_for_battery.delete(building_id_for_battery.sample), 
+    Battery.create!(
+    :building_id => building_id_for_battery.sample, 
     :battery_type => building_type.sample, 
     :status => status_type.sample, 
     :employee_id => employee_id_for_battery.delete(employee_id_for_battery.sample), 
@@ -161,9 +161,9 @@ p "Create #{Battery.count} batteries"
 # Create columns
 battery_id_for_column = [*1..20]
 
-20.times {
+80.times {
     Column.create!(
-    :battery_id => battery_id_for_column.delete(battery_id_for_column.sample), 
+    :battery_id => battery_id_for_column.sample, 
     :column_type => building_type.sample, 
     :number_of_floors_served => Faker::Number.number(digits: 2), 
     :status => status_type.sample, 
@@ -175,19 +175,32 @@ p "Create #{Column.count} columns"
 
 # Create elevators
 column_id_for_elevator = [*1..80]
-
-200.times 
+200.times{
     Elevator.create!(
-    column_id: column_id_for_elevator.sample, 
-    serial_number: Faker::Code.isbn,
-    model: service_quality.sample, 
-    elevator_type: building_type.sample,
-    status: status_type.sample,
-    date_of_commissioning: Faker::Time.between(from: 3.years.ago, to: Time.today), 
-    date_of_last_inspection: Faker::Time.between(from: 3.years.ago, to: Time.today), 
-    certificate_of_inspection: Faker::Code.isbn, 
-    information: Faker::Types.rb_string, 
-    notes: Faker::Types.rb_string
-)
+    :column_id => column_id_for_elevator.sample, 
+    :serial_number => Faker::Code.isbn, 
+    :model => service_quality.sample, 
+    :elevator_type  => building_type.sample,
+    :status => status_type.sample, 
+    :date_of_commissioning => Faker::Date.between(from: 3.years.ago, to: Date.today), 
+    :date_of_last_inspection => Faker::Date.between(from: 3.years.ago, to: Date.today), 
+    :certificate_of_inspection => Faker::Code.isbn, :information => Faker::Types.rb_string, 
+    :notes => Faker::Types.rb_string)
+}
+
+
+# 200.times 
+#     Elevator.create!(
+#     column_id: column_id_for_elevator.sample, 
+#     serial_number: Faker::Code.isbn,
+#     model: service_quality.sample, 
+#     elevator_type: building_type.sample,
+#     status: status_type.sample,
+#     date_of_commissioning: Faker::Time.between(from: 3.years.ago, to: Date.today), 
+#     date_of_last_inspection: Faker::Time.between(from: 3.years.ago, to: Date.today), 
+#     certificate_of_inspection: Faker::Code.isbn, 
+#     information: Faker::Types.rb_string, 
+#     notes: Faker::Types.rb_string
+# )
 
 # p "Create #{Elevator.count} elevators"

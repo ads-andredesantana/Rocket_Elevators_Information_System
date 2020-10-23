@@ -1,5 +1,8 @@
 {
   "name": "myapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "rrad": "^1.1.0"
+  }
 }

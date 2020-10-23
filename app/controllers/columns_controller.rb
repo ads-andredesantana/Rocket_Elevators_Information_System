@@ -1,5 +1,6 @@
 class ColumnsController < ApplicationController
   before_action :set_column, only: [:show, :edit, :update, :destroy]
+  self.inheritance_column = :_sti_disabled
 
   # GET /columns
   # GET /columns.json
