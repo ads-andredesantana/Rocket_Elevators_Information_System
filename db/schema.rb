@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_10_22_221306) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
     t.string "company_name"
     t.bigint "address_id"
     t.string "full_name_of_contact"
@@ -87,7 +88,6 @@ ActiveRecord::Schema.define(version: 2020_10_22_221306) do
     t.string "full_name_of_service_authority"
     t.integer "technical_authority_phone"
     t.string "technical_authority_email"
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["address_id"], name: "index_customers_on_address_id"
