@@ -23,10 +23,6 @@ Rails.application.routes.draw do
   get "/news_press6", to: "rocket_elevator#news_press6"
   get "/portfolio_detail_modal_1.html", to: "rocket_elevators#portfolio_detail_modal_1"
 
-  # get "/login", to: ""
-
-  
-#  root to: "home#index"
 
 
 
