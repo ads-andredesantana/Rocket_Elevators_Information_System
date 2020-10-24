@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/index', to: 'rocket_elevator#index'
   get "/residancial", to: "rocket_elevator#residancial"
   get "/commercial", to: "rocket_elevator#commercial"
-  get "/quote", to: "rocket_elevator#index"
+  get "/quote", to: "rocket_elevator#quote"
   get "/news_press1", to: "rocket_elevator#news_press1"
   get "/news_press2", to: "rocket_elevator#news_press2"
   get "/news_press3", to: "rocket_elevator#news_press3"
