@@ -8,7 +8,7 @@ class RocketElevatorController < ApplicationController
   def comercial
   end
 
-  def quote
+  def quoteQ
   end
 
   def news_press1
