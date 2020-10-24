@@ -1,4 +1,5 @@
 RailsAdmin.config do |config|
+  config.main_app_name = ['Rocket Elevator', 'Admin']
 
 # config.navigation_static_links = {
 #   'Dashboard' => '/admin' 
