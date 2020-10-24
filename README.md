@@ -20,3 +20,4 @@ Making a static website into a dynamic site by implementing Ruby on rails(MVC mo
 How to connect to the backoffice
 
 To connect with a employee account, all default employee are in db/seeds.rb. All the employee have the same default password rocket. 
+
