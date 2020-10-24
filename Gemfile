@@ -32,7 +32,6 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 #to allow mysql to portgresql
 gem 'pg'
-gem 'rails_admin_rollincode', '~> 1.0'
 
 
 
